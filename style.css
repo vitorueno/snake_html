@@ -1,0 +1,49 @@
+:root {
+    --bg-color: ghostwhite;
+    --text-color: black;
+    --border-color: red ;
+}
+
+body {
+    padding: 10vh 0;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Impact, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#gameContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#gameBoard {
+    border: 2px solid var(--border-color);
+    
+}
+
+#scoreText {
+    font-size: 100px;
+    display: flex;
+}
+
+#resetBtn {
+    font-size: 22px;
+    width: 30vw;
+    height: 7vh;
+    border: 4px solid var(--border-color);
+    border-radius: 4rem;
+    cursor: pointer;
+    /* background-color: var(--bg-color); */
+}
+
+#resetBtn:active {
+    background-color: var(--border-color);
+    color: var(--bg-color);
+}
+
+
